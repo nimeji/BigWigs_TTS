@@ -57,8 +57,9 @@ end
 
 function plugin:OnPluginEnable()
 	self:RegisterMessage("BigWigs_Voice")
-	BigWigsAPI.RegisterVoicePack("tts")
 end
+
+BigWigsAPI.RegisterVoicePack("tts")
 
 --------------------------------------------------------------------------------
 -- Event Handlers
