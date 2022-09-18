@@ -1,0 +1,12 @@
+## Interface: 90207
+
+## Title: BigWigs [|cffeda55fText to Speech|r]
+
+## X-BigWigs-LoadOn-CoreEnabled: 1
+## Dependencies: BigWigs
+## LoadOnDemand: 1
+
+## X-Category: Raid
+## X-License: MIT
+
+modules.xml
