@@ -15,7 +15,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           default_bump: minor
       - name: Zip Files
-        run: zip BigWigs_TTS.zip .
+        run: zip -r BigWigs_TTS.zip .
       - name: Create a GitHub release
         uses: ncipollo/release-action@v1
         with:
