@@ -128,6 +128,17 @@ function sound:SetSoundOptions(boss, spell, flags)
 	return self:__SetSoundOptions(boss, spell, flags)
 end
 
+local BigWigsOrig = BigWigs
+local BigWigsHook = {}
+function BigWigsHook:GetPlugin(pluginName)
+    if pluginName == "Sounds" then
+        return sound
+    end
+
+    return BigWigsOrig:GetPlugin(pluginName)
+end
+
+BigWigs = setmetatable(BigWigsHook, { __index = BigWigsOrig, __newindex = function() end, __metatable = false })
 -------------------------------------------------------------------------------
 -- Initialization
 --
